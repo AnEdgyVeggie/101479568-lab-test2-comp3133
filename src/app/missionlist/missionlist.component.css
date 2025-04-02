@@ -1,0 +1,95 @@
+
+#mission-list-comp {
+    display: flex;
+    /* width: 99vw; */
+    align-items: center;
+    justify-content: center;
+}
+
+#card-deck {
+    width:  650px;
+    max-height:  900px;
+    overflow-y: scroll;
+}
+
+mat-card {
+    margin: 20px;
+    background-color: rgba(148, 0, 0, 0.4);
+    color: white;
+    box-shadow: 0 0 10px white;
+}
+
+mat-card a {
+    color: white;
+    text-decoration: none;
+
+}
+
+mat-card-header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    /* box-shadow: 0 5px 10px white; */
+    background-color: rgba(161, 0, 0, 0.4);
+    margin-bottom: 20px
+
+}
+
+mat-card-header h2{
+    font-size: 26px;
+
+}
+
+mat-card-header  p{
+    text-align: end;
+    font-size: 18px;
+}
+
+
+mat-card-content{
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    left: 20px;
+    width: 450px;
+    margin: 0;
+
+} 
+
+mat-card-content p{ 
+    margin: 0
+}
+
+.split-info {
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    margin: 5px 0;
+
+}
+
+mat-card img {
+    float: left;
+    position: relative;
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 80px;
+    bottom: 0px;
+    left: 10px;
+}
+
+mat-card-footer{
+    margin: auto;
+    padding: 0;
+    display: flex;
+    width: 500px;
+
+}
+
+a {
+    color: rgb(130, 77, 255);
+}

@@ -1,0 +1,11 @@
+#app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app-section {
+    display: flex;
+    /* border: 1px solid red; */
+    width: 1000px;
+}

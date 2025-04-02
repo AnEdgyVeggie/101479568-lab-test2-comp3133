@@ -1,0 +1,35 @@
+<div id="mission-details-comp">
+    <div>
+
+        <div id="mission-detail-header">
+            <h2>{{missionDetails.mission_name}}</h2>
+            <h3>Flight Number: {{missionDetails.flight_number}}</h3>
+        </div>
+        <img src="{{missionDetails.links.mission_patch}}" />
+    </div>
+
+    <div class="flight-info ">
+        <h3>Launch Information</h3>
+        <p><b>Upcoming: </b>{{missionDetails.upcoming}}</p>
+
+        <p><b>Launch Year: </b>{{missionDetails.launch_year}}</p>
+        <p><b>Launch Site: </b>{{missionDetails.launch_site.site_name}}</p>
+        <p><b></b></p>
+
+    </div>
+
+    
+    <div class="flight-info ">
+        <h3>Rocket Information</h3>
+        <p><b>ID: </b>{{missionDetails.rocket.rocket_id}}</p>
+        <p><b>Name: </b>{{missionDetails.rocket.rocket_name}}</p>
+        <p><b>Type: </b>{{missionDetails.rocket.rocket_type}}</p>
+        <p><b></b></p>
+
+    </div>
+    <div class="flight-info ">
+        <h3>Flight Details</h3>
+        <p>{{missionDetails.details}}</p>
+    </div>
+
+</div>

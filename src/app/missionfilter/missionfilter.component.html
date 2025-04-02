@@ -1,0 +1,58 @@
+<div id="filter-comp">
+
+    <h3>Filters</h3>
+    <div class="filter-section">
+    </div>
+
+    <h4>Launch Year</h4>
+    <div class="filter-section">
+        <div>
+            <button (click)="setFilter('launch_year', '2006')" >2006</button>
+            <button (click)="setFilter('launch_year', '2008')" >2008</button>
+            <button (click)="setFilter('launch_year', '2010')" >2010</button>
+            <button (click)="setFilter('launch_year', '2012')" >2012</button>
+            <button (click)="setFilter('launch_year', '2014')" >2014</button>
+            <button (click)="setFilter('launch_year', '2016')" >2016</button>
+            <button (click)="setFilter('launch_year', '2018')" >2018</button>
+            <button (click)="setFilter('launch_year', '2020')" >2020</button>
+        </div>
+        <div>
+            <button (click)="setFilter('launch_year', '2007')" >2007</button>
+            <button (click)="setFilter('launch_year', '2009')" >2009</button>
+            <button (click)="setFilter('launch_year', '2011')" >2011</button>
+            <button (click)="setFilter('launch_year', '2013')" >2013</button>
+            <button (click)="setFilter('launch_year', '2015')" >2015</button>
+            <button (click)="setFilter('launch_year', '2017')" >2017</button>
+            <button (click)="setFilter('launch_year', '2019')" >2019</button>
+
+        </div>
+    </div>
+
+    <h4>Successful Launch</h4>
+    <div class="filter-section">
+        <div>
+            <button (click)="setFilter('launch_success','true')" >True</button>
+        </div>
+        <div>
+            <button (click)="setFilter('launch_success', 'false')" >False</button>
+        </div>
+    </div>
+
+    <h4>Upcomming Launch</h4>
+    <div class="filter-section">
+        <div>
+            <button (click)="setFilter('upcoming','true')" >True</button>
+        </div>
+        <div>
+            <button (click)="setFilter('upcoming', 'false')" >False</button>
+        </div>
+    </div>
+
+    <h4>Reset</h4>
+    <div class="filter-section">
+        <div>
+            <button (click)="setFilter('', '')" >Reset Filters</button>
+        </div>
+    </div>
+
+</div>

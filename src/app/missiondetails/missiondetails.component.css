@@ -1,0 +1,37 @@
+#mission-details-comp {
+    margin-top: 50px;
+    font-size: 26px;
+    color: white;
+}
+
+#mission-detail-header {
+    /* display: flex; */
+    width: 40vw;
+    /* text-align: center; */
+    float: right;
+    border-bottom: 2px solid white;
+}
+#mission-detail-header h2 {
+    font-size: 56px;
+
+}
+
+#mission-details-comp h3 {
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+#mission-details-comp img {
+    /* float: left; */
+    width: 250px;
+    margin-right: 100px
+}
+
+.flight-info {
+    margin-top: 50px;
+    border-bottom: 1px solid white;
+}
+
+p b {
+    font-size: 26px;
+}

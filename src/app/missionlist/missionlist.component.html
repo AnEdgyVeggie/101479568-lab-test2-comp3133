@@ -1,0 +1,46 @@
+<div id="mission-list-comp">
+
+    <app-missionfilter />
+    <div id="card-deck">
+        <mat-card appearance="outlined" *ngFor="let mission of missionList" class="flight-card">
+            <div>
+                <div>
+                    
+                    <a [routerLink]="['/details/', mission.flightInfo.flight_number]"  >
+                        <mat-card-header>
+                            <h2>{{mission.flightInfo.mission_name}}</h2>
+                            <p>Flight Number: {{mission.flightInfo.flight_number}}</p>
+                        </mat-card-header>
+                    </a>
+                        <img  src={{mission.flightInfo.links.mission_patch_small}}>
+                        <mat-card-content>
+                            <span class="split-info">
+                                <p><b>Launch Year:</b> {{mission.flightInfo.launch_year}}</p>
+                                <a href={{mission.flightInfo.links.wikipedia}}><b>Wikipedia</b></a>
+                                
+                            </span>
+                            
+                            <span class="split-info">
+                                <p><b>Rocket Name:</b> {{mission.flightInfo.rocket.rocket_name}}</p>
+                                <p><b>Rocket Type: </b>{{mission.flightInfo.rocket.rocket_type}}</p>
+                            </span>
+                            
+                            <span class="split-info">
+                                <a href={{mission.flightInfo.links.video_link}}><b>Video</b></a>
+                            </span>
+                            <span class="split-info">
+                                <a href={{mission.flightInfo.links.article_link}}>{{mission.flightInfo.links.article_link || "No Article Link Present"}}</a>
+                            </span>
+                        </mat-card-content>
+                        <mat-card-footer>
+                            <p><b>Details: </b>{{mission.flightInfo.details || "No Details Present"}}</p>
+                            
+                        </mat-card-footer>
+                    </div>
+                    
+                </div>
+        </mat-card >
+    </div>
+
+
+</div>
